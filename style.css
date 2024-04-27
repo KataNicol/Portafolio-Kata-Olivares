@@ -1,0 +1,654 @@
+:root{
+   --cor-de-fondo: #FFFFFF;
+   --cor-de-link: #000000;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-size:small;
+    margin:10px;    
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+    color: var(--cor-de-link);
+}
+
+/*Sección Menu*/
+.menu{
+display:flex;
+margin-top:10px;
+}
+
+.menu__title{
+    font-size: 14px;
+}
+
+.menu__header{
+    display:flex;
+    flex-flow:row wrap;
+    font-weight: bold;
+    width:100%;
+    justify-items: auto;
+}
+
+.header__item{
+    display:flex;
+    font-size: x-small;
+    flex-grow: 1 2 1;
+    align-items: center;
+    gap:10px;
+}
+
+.menu__list{
+       display:none;
+}
+
+.menu__list__item__contacto{
+    font-weight:normal;
+    font-size: 13px;
+    position:absolute;
+    right:10px;
+}
+
+.foto__profile{
+    height: 150px;
+    width:auto;
+    position:absolute;
+    left:80px;
+    top:65px;   
+}
+
+.flor-loto{
+    height:130px;
+    width:130px;
+    position:absolute;
+    left:310px;
+}
+
+/*Sección About*/
+.title__container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.title__bio{
+    position:absolute;
+    left: 30px;
+    top:230px;
+    font-size:15px;
+}
+
+.title__subsection{
+    position:absolute;
+    left:30px;
+    right: 30px;
+    top:270px;
+    font-size:1em;
+    font-weight:lighter;
+}
+
+.title__network{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top: 190px;
+    left: 160px;
+    gap:20px;
+}
+
+.about__container{
+    background-image: url(assets/fondo-flor3.jpg);
+    position:absolute;
+    top:340px;
+    left:0px;
+    padding: 0 20px;  
+}
+
+.skills{
+    position: absolute;
+    top:90px;
+}
+
+.skills__title{
+    display:flex;
+    position:absolute;
+    top:580px;
+    left:10px;    
+}
+
+.skills__line{
+    display:flex;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:630px;   
+}
+
+.skills__img{
+    display:flex;
+    width: 50px;
+    height: 50px;    
+}
+
+.skills__name{
+    text-align: center;
+}
+
+/*Sección Hobbies*/ 
+.hobbies{
+    display:flex;
+    position:absolute;
+    top:120px;
+}
+
+.hobbies__title{
+    display:flex;
+    position:absolute;
+    top:730px;
+    left:10px;    
+}
+
+.hobbies__line{
+    display:flex;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-gap: 20px 5px;
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:780px;
+}
+
+.hobbies__img{
+    display:flex;
+    width: 50px;
+    height: 50px;
+}
+
+.hobbies__name{
+    text-align: center;
+}
+
+.academic{
+    display: flex;
+    position: absolute;
+    top: 1180px;
+}
+
+.academic__title{
+    position:absolute;
+    top:15px;
+    left:10px;
+    text-wrap: nowrap;
+}
+
+.academic__courses__box{
+    display:flex;
+    position: absolute;
+    top:70px;
+    left: 10px;   
+}
+
+.academic__courses__list{
+    padding:0px;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    height: 76px;
+    width:400px;  
+}
+
+/*Contacto*/
+.formcontato{
+    display:flex;
+    background-image: url(assets/fono.jpg);
+    width:100%;
+    position: absolute;
+    top:1500px;
+    left:0px;
+    height:500px;
+    
+}
+
+.formcontato__text{
+    margin-left: 20px;
+}
+
+.formcontato__input{
+    display:block;
+    margin:20px;
+    border-radius:8px;
+}
+
+.formcontato__textarea{
+    margin-left:20px;
+    border-radius:10px;
+}
+
+.formcontato__boton{
+    display:block;
+    position:absolute;
+    top: 410px;
+    left:140px;
+    margin-bottom: 100px;
+    color:white;
+    background-color:cadetblue;
+    border-radius: 10px;
+    padding:10px;
+
+}
+    /*footeer*/
+
+.footer{
+   display:flex;
+   position:absolute;
+   top:2020px;
+   bottom:0px;
+   left:0px;
+   width:480px;
+   height:90px;
+ }
+
+.footer__rodapie{
+    background-image:url(assets/fondo-flor.jpg);
+    width:100%;
+    height: 90px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;    
+    align-content: center;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 834px) {
+
+.menu__list__item__contacto{
+    display: flex;
+    position:absolute;
+    font-weight: bold;
+    top:5px;
+    left:600px;    
+}
+
+.foto__profile{
+    height: 200px;
+    width:auto;
+    position:absolute;
+    left:600px;
+}
+
+.flor-loto{
+    height:150px;
+    width:150px;
+    position:absolute;
+    left:250px;
+    top:60px;
+}
+
+.title__bio{
+    position:absolute;
+    left:50px;
+    top:230px;
+    width:60%;
+    font-size: 15px;
+}
+
+.title__subsection{
+    position:absolute;
+    left:50px;
+    top:250px;
+    width:50%;
+    font-size: 17px;
+    font-weight:lighter;
+}
+
+.title__network{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top: 280px;
+    left:560px;
+    gap:20px;
+}
+
+.about__container{
+    position: absolute;
+    top:380px;
+}
+
+.about__title{
+    font-size: 18px;
+}
+
+.about__paragraph{
+    font-size: 16px;
+}
+
+.skills{
+    position: absolute;
+    top:130px;
+}
+
+.hobbies{
+    display:flex;
+    position:absolute;
+    top:180px;
+}
+
+.academic{
+    display: flex;
+    position: absolute;
+    top: 1250px;
+}
+
+.academic__courses__item__title{
+    font-size:16px;
+}
+
+.formcontato{
+    display:block;
+    background-image: url(assets/fono.jpg);
+    position: absolute;
+    top:1600px;
+    left:0px;
+    height:500px;
+    width:840px;
+}
+
+.formcontato__boton{
+    position:absolute;
+    top: 400px;
+}
+
+.footer{
+    display:flex;
+    position:absolute;
+    top:2120px;
+    bottom:0px;
+    left:0px;
+    width:840px;
+    height:90px;
+  }
+
+.footer__rodapie{
+    width:840px;
+    height: 90px;
+    position: absolute;
+    font-size: 1.5em;
+  }
+}
+
+
+
+/*Desktop*/
+@media (min-width: 1440px) {
+
+/*Menu*/
+.menu__list__item__contacto{
+    display: flex;
+    position:absolute;
+    top:-10px;
+    left:1050px;    
+    font-size: 25px;
+}
+
+.menu__title{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+
+.menu__list{
+    display:flex;
+    flex-direction: row;
+    font-size: 23px;
+    gap: 20px;
+    justify-content: space-between;
+    position:absolute;
+    top: 55px;
+    left:450px;
+}
+
+.menu__header{
+    position: absolute;
+    top:50px;
+    justify-items: center;
+}
+
+.header__item{
+    position:absolute;
+    top:3px;
+    gap:0;
+}
+
+.vector{
+    height:30px;
+    width:30px;
+    margin-left: 10px;
+    
+}
+
+.foto__profile{
+    height: 450px;
+    width:auto;
+    position:absolute;
+    left:1040px;
+    top:150px;
+}
+
+/*Sección sobre mi*/
+
+.title__bio{
+    position:absolute;
+    left: 100px;
+    top:480px;
+    width:60%;
+    font-size: 25px;
+}
+
+.title__subsection{
+    position:absolute;
+    left:100px;
+    top:520px;
+    width:50%;
+    font-size: 25px;
+    font-weight:lighter;
+}
+
+.title__network{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top: 640px;
+    left:1030px;
+    gap:20px;
+    font-size: 28px;
+}
+
+.about__container{
+    position:absolute;
+    top:810px;
+    height: 500px;
+}
+
+.about__title{
+    font-size:30px;
+    padding:30px;
+}
+
+.about__paragraph{
+    font-size: 25px;
+    margin:30px;
+}
+
+.flor-loto{
+    height:300px;
+    width:300px;
+    position: absolute;
+    top:180px;
+}
+
+.skills{
+    margin-left: 30px;
+}
+
+.skills__title{
+    position: absolute;
+    top: 1250px;
+    font-size: 35px;    
+}
+
+.skills__line{
+    display:flex;
+    position: absolute;
+    top:1360px;
+}
+
+.skills__box{
+    display:flex;
+}
+
+.skills__img{
+    height: 90px;
+    width:90px;
+}
+
+.skills__name{
+    font-size:25px; 
+}
+
+.hobbies{
+    margin-left: 30px;
+}
+
+.hobbies__title{
+    font-size: 35px;
+    position: absolute;
+    top:1500px;
+}
+
+.hobbies__line{
+    display:flex;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-gap: 20px 25px;
+    position: absolute;
+    top:1610px;
+}
+
+.hobbies__img{
+    height: 90px;
+    width:90px;
+}
+
+.hobbies__name{
+    font-size: 25px;
+}
+
+.academic{
+    display: flex;
+    height: 400px;
+    width:1000px;
+    position: absolute;
+    top:2300px;
+    margin:30px;
+}
+
+.academic__title{
+    font-size: 35px;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__courses__item__img{
+    height: 160px;
+    width:460px;
+    padding-top: 30px;    
+}
+
+.academic__courses__item__title{
+    font-size: 25px;
+}
+
+.academic__courses__item__subtitle{
+    font-size: 30px;
+}
+
+.formcontato{
+    display:flex;
+    width:100%;
+    height: 800px;
+    position: absolute;
+    top:2900px;
+}
+
+.formcontato__text{
+    height: 300px;
+    font-size: 25px;
+    position: absolute;
+    left:20px;
+ 
+}
+
+.formcontato__input{
+    display:block;
+    height: 50px;
+    width: 700px;
+    margin:40px;
+    border-radius:20px;
+}
+
+.formcontato__input::placeholder{
+    font-size: 25px;
+}
+
+.formcontato__textarea{
+    height: 130px;
+    width: 600px;
+    margin:40px;
+    border-radius:20px;
+}
+
+.formcontato__textarea::placeholder{
+    font-size:25px;
+}
+
+.formcontato__boton{
+    height:80px;
+    width:230px;
+    position:absolute;
+    top:600px;
+    left:900px;
+    font-size:25px;
+
+}
+
+.footer{
+    position: absolute;
+    top:3730px;
+    width:100%;
+    height:190px;
+}
+
+.footer__rodapie{
+    width:100%;
+    height:190px;
+    font-size: 30px;
+}
+}
