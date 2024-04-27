@@ -411,6 +411,27 @@ Utiliza las referencias de los breakpoints @media abajo */
     margin-top: 23px;
 }
 
+nav li{
+    display:inline;
+}
+
+nav a:hover{
+   color:cadetblue;
+   text-decoration:underline;
+   font-size: 26px;
+   font-weight: bold;
+}
+
+#sobremi{
+    
+}
+
+.menu__list__item__contacto:hover{
+    color:cadetblue;
+    text-decoration:underline;
+    font-size: 26px;
+}
+
 .menu__list{
     display:flex;
     flex-direction: row;
@@ -478,6 +499,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-size: 28px;
 }
 
+.title__network__item:hover{
+    color:cadetblue;
+    text-decoration:underline;
+    font-size: 30px;
+}
+
 .about__container{
     position:absolute;
     top:810px;
@@ -500,6 +527,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     position: absolute;
     top:180px;
 }
+
+.flor-loto:hover{
+    transform: scale(1.2);
+}
+
 
 .skills{
     margin-left: 30px;
@@ -636,7 +668,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     top:600px;
     left:900px;
     font-size:25px;
+}
 
+.formcontato__boton:hover{
+    transform: scale(1.2); 
 }
 
 .footer{
