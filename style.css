@@ -76,7 +76,6 @@ margin-top:10px;
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 .title__bio{
@@ -215,8 +214,7 @@ margin-top:10px;
     position: absolute;
     top:1500px;
     left:0px;
-    height:500px;
-    
+    height:500px;    
 }
 
 .formcontato__text{
@@ -244,10 +242,9 @@ margin-top:10px;
     background-color:cadetblue;
     border-radius: 10px;
     padding:10px;
-
 }
-    /*footeer*/
 
+/*footer*/
 .footer{
    display:flex;
    position:absolute;
@@ -268,13 +265,11 @@ margin-top:10px;
     align-content: center;
 }
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
+/*responsividad - @media*/
 
 /*Tablet*/
 @media (min-width: 834px) {
-
+/*seccion menu*/
 .menu__list__item__contacto{
     display: flex;
     position:absolute;
@@ -324,6 +319,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     gap:20px;
 }
 
+/*seccion sobre mi*/
 .about__container{
     position: absolute;
     top:380px;
@@ -337,17 +333,20 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-size: 16px;
 }
 
+/*seccion skills*/
 .skills{
     position: absolute;
     top:130px;
 }
 
+/*seccion hobbies*/
 .hobbies{
     display:flex;
     position:absolute;
     top:180px;
 }
 
+/*seccion academica*/
 .academic{
     display: flex;
     position: absolute;
@@ -358,6 +357,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-size:16px;
 }
 
+/*contacto*/
 .formcontato{
     display:block;
     background-image: url(assets/fono.jpg);
@@ -373,6 +373,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     top: 400px;
 }
 
+/*seccion footer*/
 .footer{
     display:flex;
     position:absolute;
@@ -390,8 +391,6 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-size: 1.5em;
   }
 }
-
-
 
 /*Desktop*/
 @media (min-width: 1440px) {
@@ -420,10 +419,6 @@ nav a:hover{
    text-decoration:underline;
    font-size: 26px;
    font-weight: bold;
-}
-
-#sobremi{
-    
 }
 
 .menu__list__item__contacto:hover{
@@ -458,8 +453,7 @@ nav a:hover{
 .vector{
     height:30px;
     width:30px;
-    margin-left: 10px;
-    
+    margin-left: 10px;    
 }
 
 .foto__profile{
@@ -469,8 +463,6 @@ nav a:hover{
     left:1040px;
     top:150px;
 }
-
-/*Sección sobre mi*/
 
 .title__bio{
     position:absolute;
@@ -505,6 +497,7 @@ nav a:hover{
     font-size: 30px;
 }
 
+/*Sección sobre mi*/
 .about__container{
     position:absolute;
     top:810px;
@@ -532,7 +525,7 @@ nav a:hover{
     transform: scale(1.2);
 }
 
-
+/*seccion skills*/
 .skills{
     margin-left: 30px;
 }
@@ -562,6 +555,7 @@ nav a:hover{
     font-size:25px; 
 }
 
+/*seccion hobbies*/
 .hobbies{
     margin-left: 30px;
 }
@@ -590,6 +584,7 @@ nav a:hover{
     font-size: 25px;
 }
 
+/*seccion academica*/
 .academic{
     display: flex;
     height: 400px;
@@ -622,6 +617,7 @@ nav a:hover{
     font-size: 30px;
 }
 
+/*Contacto*/
 .formcontato{
     display:flex;
     width:100%;
@@ -634,8 +630,7 @@ nav a:hover{
     height: 300px;
     font-size: 25px;
     position: absolute;
-    left:20px;
- 
+    left:20px; 
 }
 
 .formcontato__input{
@@ -674,6 +669,7 @@ nav a:hover{
     transform: scale(1.2); 
 }
 
+/*seccion footer*/
 .footer{
     position: absolute;
     top:3730px;
