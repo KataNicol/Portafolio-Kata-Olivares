@@ -527,19 +527,20 @@ nav a:hover{
 
 /*seccion skills*/
 .skills{
+    display:flex;
+    flex-wrap: wrap;
     margin-left: 30px;
+    position:absolute;
+    top:800px;
 }
 
 .skills__title{
-    position: absolute;
-    top: 1250px;
     font-size: 35px;    
 }
 
 .skills__line{
     display:flex;
-    position: absolute;
-    top:1360px;
+    margin-top:80px;
 }
 
 .skills__box{
@@ -557,13 +558,14 @@ nav a:hover{
 
 /*seccion hobbies*/
 .hobbies{
+    display:flex;
     margin-left: 30px;
+    position: absolute;
+    top: 1000px;
 }
 
 .hobbies__title{
     font-size: 35px;
-    position: absolute;
-    top:1500px;
 }
 
 .hobbies__line{
@@ -571,8 +573,7 @@ nav a:hover{
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     grid-gap: 20px 25px;
-    position: absolute;
-    top:1610px;
+    margin-top:80px;
 }
 
 .hobbies__img{
