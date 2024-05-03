@@ -1,3 +1,7 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
 :root{
    --cor-de-fondo: #FFFFFF;
    --cor-de-link: #000000;
@@ -6,8 +10,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Raleway';
-    font-size:small;
-    margin:10px;    
+    font-size:small;   
 }
 
 ol, ul,li {
@@ -22,137 +25,130 @@ a{
 /*Sección Menu*/
 .menu{
 display:flex;
-margin-top:10px;
+padding:20px 10px;
+width: 100%;
 }
 
 .menu__title{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .menu__header{
     display:flex;
-    flex-flow:row wrap;
-    font-weight: bold;
     width:100%;
-    justify-items: auto;
-}
+    justify-content: space-between;
+    align-items: center;
+}   
 
 .header__item{
     display:flex;
-    font-size: x-small;
-    flex-grow: 1 2 1;
+    flex-direction: row;
     align-items: center;
-    gap:10px;
+    gap:20px;
 }
 
 .menu__list{
-       display:none;
+    display:none;
 }
 
 .menu__list__item__contacto{
     font-weight:normal;
-    font-size: 13px;
-    position:absolute;
-    right:10px;
+    font-size: 14px;
 }
 
-.foto__profile{
-    height: 150px;
-    width:auto;
-    position:absolute;
-    left:80px;
-    top:65px;   
+.titledescription{
+    width:50%;
+    padding-left: 25px;
 }
 
 .flor-loto{
-    height:130px;
-    width:130px;
-    position:absolute;
-    left:310px;
+    height:140px;
+    width:140px;
 }
+
+.presentacion{
+    display:flex;
+    flex-direction: column;
+    font-size:12px;
+    gap:10px;
+}
+
+.titlebio{
+    font-weight: bold;
+}
+
+.title{
+    display:flex;
+}
+
+.titlesubsection{
+    font-weight: lighter;
+}
+
+.foto__profile{
+  height: 150px;
+  width:auto;
+}
+
+.title__redes{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:20px;
+    padding:20px;
+    margin-left:40px;
+}
+
+.lista__redes{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
 
 /*Sección About*/
-.title__container{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.title__bio{
-    position:absolute;
-    left: 30px;
-    top:230px;
-    font-size:15px;
-}
-
-.title__subsection{
-    position:absolute;
-    left:30px;
-    right: 30px;
-    top:270px;
-    font-size:1em;
-    font-weight:lighter;
-}
-
-.title__network{
-    display:flex;
-    flex-direction:row;
-    position:absolute;
-    top: 190px;
-    left: 160px;
-    gap:20px;
-}
-
 .about__container{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
     background-image: url(assets/fondo-flor3.jpg);
-    position:absolute;
-    top:340px;
-    left:0px;
-    padding: 0 20px;  
+    padding:20px;
+    margin-top: 30px;
+    margin-bottom:20px;
 }
 
+/*seccion skills*/
 .skills{
-    position: absolute;
-    top:90px;
+    padding:20px;    
 }
 
 .skills__title{
-    display:flex;
-    position:absolute;
-    top:580px;
-    left:10px;    
+    font-size: 14px;
+    padding-bottom:30px;
 }
 
 .skills__line{
     display:flex;
-    width:50px;
-    height:50px;
-    position:absolute;
-    top:630px;   
+    width: 50px;
+    height: 50px;
+    gap:20px;
 }
 
 .skills__img{
     display:flex;
     width: 50px;
-    height: 50px;    
-}
-
-.skills__name{
-    text-align: center;
+    height: 50px;
 }
 
 /*Sección Hobbies*/ 
 .hobbies{
-    display:flex;
-    position:absolute;
-    top:120px;
+   padding:20px;
 }
 
 .hobbies__title{
-    display:flex;
-    position:absolute;
-    top:730px;
-    left:10px;    
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom:30px;
 }
 
 .hobbies__line{
@@ -162,8 +158,7 @@ margin-top:10px;
     grid-gap: 20px 5px;
     width: 50px;
     height: 50px;
-    position:absolute;
-    top:780px;
+    gap:20px;
 }
 
 .hobbies__img{
@@ -176,49 +171,58 @@ margin-top:10px;
     text-align: center;
 }
 
+/*seccion academica*/
 .academic{
     display: flex;
-    position: absolute;
-    top: 1180px;
+    flex-direction: column;
+    padding:180px 0px 40px 0px;
 }
 
 .academic__title{
-    position:absolute;
-    top:15px;
-    left:10px;
-    text-wrap: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    display:flex;
+    padding:20px 20px 10px 20px;
 }
 
 .academic__courses__box{
-    display:flex;
-    position: absolute;
-    top:70px;
-    left: 10px;   
+    display:flex; 
+    padding: 20px;
 }
 
-.academic__courses__list{
-    padding:0px;
+.imagen__academica{
+    height:80px;
+    width:250px;  
 }
 
-.academic__courses__item__img{
-    display: flex;
-    height: 76px;
-    width:400px;  
+.academic__courses__item__title{
+    padding:20px 0px;
+    width:80%;
+}
+
+.academic__courses__item__subtitle{
+    font-size:18px;
 }
 
 /*Contacto*/
 .formcontato{
     display:flex;
+    flex-direction: column;
     background-image: url(assets/fono.jpg);
     width:100%;
-    position: absolute;
-    top:1500px;
-    left:0px;
     height:500px;    
 }
 
-.formcontato__text{
-    margin-left: 20px;
+.div__texto__contacto{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin:20px;
+    font-weight: bold;
+}
+
+.div__input{
+   padding: 0px 20px 20px 20px;
 }
 
 .formcontato__input{
@@ -233,26 +237,20 @@ margin-top:10px;
 }
 
 .formcontato__boton{
-    display:block;
-    position:absolute;
-    top: 410px;
-    left:140px;
-    margin-bottom: 100px;
+    display:flex;
     color:white;
     background-color:cadetblue;
     border-radius: 10px;
     padding:10px;
+    margin: 30px auto;
 }
 
 /*footer*/
 .footer{
    display:flex;
-   position:absolute;
-   top:2020px;
-   bottom:0px;
-   left:0px;
    width:480px;
    height:90px;
+   margin-top:15px;
  }
 
 .footer__rodapie{
@@ -268,61 +266,64 @@ margin-top:10px;
 /*responsividad - @media*/
 
 /*Tablet*/
-@media (min-width: 834px) {
+@media (min-width:834px){
 /*seccion menu*/
 .menu__list__item__contacto{
     display: flex;
-    position:absolute;
+    font-size: 16px;
     font-weight: bold;
-    top:5px;
-    left:600px;    
+    padding-right: 10px;   
+}
+
+.menu__title{
+    font-size: 16px;
+}
+
+.header__item{
+    gap:370px;
+}
+
+.presentacion{
+    font-size:16px;    
+}
+
+.title{
+    align-items: center;
+}
+
+.titledescription{
+    width:60%
+}
+
+.title__redes{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-left:100px;
+}
+
+.titlebio{
+    font-weight: bold;
+}
+
+.title__subsection{
+    width:50%;    
 }
 
 .foto__profile{
     height: 200px;
     width:auto;
-    position:absolute;
-    left:600px;
 }
 
 .flor-loto{
     height:150px;
     width:150px;
-    position:absolute;
-    left:250px;
-    top:60px;
-}
-
-.title__bio{
-    position:absolute;
-    left:50px;
-    top:230px;
-    width:60%;
-    font-size: 15px;
-}
-
-.title__subsection{
-    position:absolute;
-    left:50px;
-    top:250px;
-    width:50%;
-    font-size: 17px;
-    font-weight:lighter;
-}
-
-.title__network{
-    display:flex;
-    flex-direction:row;
-    position:absolute;
-    top: 280px;
-    left:560px;
-    gap:20px;
+    margin:0px 190px;
 }
 
 /*seccion sobre mi*/
 .about__container{
-    position: absolute;
-    top:380px;
+    gap:20px;    
 }
 
 .about__title{
@@ -335,79 +336,109 @@ margin-top:10px;
 
 /*seccion skills*/
 .skills{
-    position: absolute;
-    top:130px;
+    height: 180px;
+}
+
+.skills__title{
+    font-size: 18px;
+}
+
+.skills__line{
+    height: 60px;
+    width:60px;
+    gap:30px;
+}
+
+.skills__box{
+    height: 60px;
+    width:60px;
+}
+
+.skills__img{
+    height: 60px;
+    width:60px;
 }
 
 /*seccion hobbies*/
-.hobbies{
-    display:flex;
-    position:absolute;
-    top:180px;
+.hobbies__title{
+    font-size: 18px;
+}
+
+.hobbies__line{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-gap: 90px 30px;
+    height: 60px;
+    width:60px;
+}
+
+.hobbies__box{
+    height: 60px;
+    width:60px;
+}
+
+.hobbies__img{
+    height: 60px;
+    width:60px;
 }
 
 /*seccion academica*/
 .academic{
-    display: flex;
-    position: absolute;
-    top: 1250px;
+    padding: 250px 0px 40px 0px;
+}
+
+.academic__title{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .academic__courses__item__title{
     font-size:16px;
+    width:70%;
+}
+
+.academic__courses__item__subtitle{
+    font-size:18px;
+    font-weight: bold;
 }
 
 /*contacto*/
-.formcontato{
-    display:block;
-    background-image: url(assets/fono.jpg);
-    position: absolute;
-    top:1600px;
-    left:0px;
-    height:500px;
-    width:840px;
-}
-
-.formcontato__boton{
-    position:absolute;
-    top: 400px;
+.div__texto__contacto{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /*seccion footer*/
 .footer{
-    display:flex;
-    position:absolute;
-    top:2120px;
-    bottom:0px;
-    left:0px;
-    width:840px;
-    height:90px;
-  }
-
-.footer__rodapie{
-    width:840px;
-    height: 90px;
-    position: absolute;
-    font-size: 1.5em;
-  }
+    width:100%;
 }
 
-/*Desktop*/
-@media (min-width: 1440px) {
+.footer__rodapie{
+    font-size: 1.3em;
+    height:120px;
+    width:100%;
+}
+}
 
+
+/*Desktop*/
+@media (min-width: 1440px){
 /*Menu*/
-.menu__list__item__contacto{
-    display: flex;
-    position:absolute;
-    top:-10px;
-    left:1050px;    
-    font-size: 25px;
+.menu__header{
+    display:flex;
+    height: 110px;
+    align-items: center;
+    gap:40px;
 }
 
 .menu__title{
-    font-size: 25px;
+    font-size:25px;
     margin-left: 10px;
-    margin-top: 23px;
+}
+
+.menu__list__item__contacto{ 
+    font-size:25px;
+    padding-right:20px;
 }
 
 nav li{
@@ -429,69 +460,35 @@ nav a:hover{
 
 .menu__list{
     display:flex;
-    flex-direction: row;
     font-size: 23px;
     gap: 20px;
-    justify-content: space-between;
-    position:absolute;
-    top: 55px;
-    left:450px;
-}
-
-.menu__header{
-    position: absolute;
-    top:50px;
-    justify-items: center;
-}
-
-.header__item{
-    position:absolute;
-    top:3px;
-    gap:0;
-}
-
-.vector{
-    height:30px;
-    width:30px;
-    margin-left: 10px;    
 }
 
 .foto__profile{
-    height: 450px;
+    height: 400px;
     width:auto;
-    position:absolute;
-    left:1040px;
-    top:150px;
 }
 
-.title__bio{
-    position:absolute;
-    left: 100px;
-    top:480px;
-    width:60%;
-    font-size: 25px;
+.presentacion{
+    font-size:28px;
+    padding:20px;
 }
 
-.title__subsection{
-    position:absolute;
-    left:100px;
-    top:520px;
-    width:50%;
-    font-size: 25px;
-    font-weight:lighter;
-}
-
-.title__network{
+.title__redes{
     display:flex;
-    flex-direction:row;
-    position:absolute;
-    top: 640px;
-    left:1030px;
-    gap:20px;
+    flex-direction:column;
+    gap:30px;
     font-size: 28px;
+    padding-bottom:52px;
 }
 
-.title__network__item:hover{
+.titlenetworkitem:hover{
+    color:cadetblue;
+    text-decoration:underline;
+    font-size: 30px;
+}
+
+.titlenetwork__item:hover{
     color:cadetblue;
     text-decoration:underline;
     font-size: 30px;
@@ -499,26 +496,24 @@ nav a:hover{
 
 /*Sección sobre mi*/
 .about__container{
-    position:absolute;
-    top:810px;
-    height: 500px;
+    gap:35px;
+    padding:30px;
+    height: 550px;
 }
 
 .about__title{
     font-size:30px;
-    padding:30px;
+    margin-left: 10px;
 }
 
 .about__paragraph{
-    font-size: 25px;
-    margin:30px;
+    font-size:28px;
+    margin-left: 10px;
 }
 
 .flor-loto{
     height:300px;
     width:300px;
-    position: absolute;
-    top:180px;
 }
 
 .flor-loto:hover{
@@ -528,28 +523,30 @@ nav a:hover{
 /*seccion skills*/
 .skills{
     display:flex;
-    flex-wrap: wrap;
     margin-left: 30px;
-    position:absolute;
-    top:800px;
 }
 
 .skills__title{
-    font-size: 35px;    
+    font-size: 30px;    
 }
 
 .skills__line{
     display:flex;
     margin-top:80px;
+    height: 100px;
+    width:100px;
+    gap:50px;
 }
 
 .skills__box{
     display:flex;
+    height: 100px;
+    width:100px;
 }
 
 .skills__img{
-    height: 90px;
-    width:90px;
+    height:100px;
+    width:100px;
 }
 
 .skills__name{
@@ -560,25 +557,33 @@ nav a:hover{
 .hobbies{
     display:flex;
     margin-left: 30px;
-    position: absolute;
-    top: 1000px;
 }
 
 .hobbies__title{
-    font-size: 35px;
+    font-size: 30px;
+    height: 100px;
+    padding: 100px 0px;
 }
 
 .hobbies__line{
-    display:flex;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    grid-gap: 20px 25px;
-    margin-top:80px;
+    grid-gap: 180px 50px;
+    height:100px;
+    width:100px;
+    padding-top:200px;
+    padding-bottom:250px;
+    margin-left:-35px;
+}
+
+.hobbies__box{
+    height:100px;
+    width:100px;
 }
 
 .hobbies__img{
-    height: 90px;
-    width:90px;
+    height:100px;
+    width:100px;
 }
 
 .hobbies__name{
@@ -587,27 +592,22 @@ nav a:hover{
 
 /*seccion academica*/
 .academic{
-    display: flex;
-    height: 400px;
-    width:1000px;
-    position: absolute;
-    top:2300px;
-    margin:30px;
+    padding:300px 0px 40px 30px;
 }
 
 .academic__title{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .academic__courses__list{
     display: flex;
     flex-direction: column;
+    gap:30px;
 }
 
-.academic__courses__item__img{
+.imagen__academica{
     height: 160px;
-    width:460px;
-    padding-top: 30px;    
+    width:500px; 
 }
 
 .academic__courses__item__title{
@@ -622,22 +622,18 @@ nav a:hover{
 .formcontato{
     display:flex;
     width:100%;
-    height: 800px;
-    position: absolute;
-    top:2900px;
+    height:900px;
 }
 
-.formcontato__text{
-    height: 300px;
-    font-size: 25px;
-    position: absolute;
-    left:20px; 
+.div__texto__contacto{
+    font-size: 28px;
+    padding:30px;
 }
 
 .formcontato__input{
     display:block;
-    height: 50px;
-    width: 700px;
+    height:50px;
+    width: 600px;
     margin:40px;
     border-radius:20px;
 }
@@ -658,12 +654,12 @@ nav a:hover{
 }
 
 .formcontato__boton{
-    height:80px;
-    width:230px;
-    position:absolute;
-    top:600px;
-    left:900px;
-    font-size:25px;
+    height:60px;
+    width: 280px;
+    font-size:33px;
+    justify-content: center;
+    align-items:center;
+    margin-right:360px;
 }
 
 .formcontato__boton:hover{
@@ -672,15 +668,15 @@ nav a:hover{
 
 /*seccion footer*/
 .footer{
-    position: absolute;
-    top:3730px;
     width:100%;
-    height:190px;
+    height:200px;
+    margin-top: 30px;
 }
 
 .footer__rodapie{
     width:100%;
-    height:190px;
+    height:200px;
     font-size: 30px;
 }
 }
+/*FIN*/
