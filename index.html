@@ -15,50 +15,51 @@
 <body>
     
     <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <section class="menu__header">
-            <header class="header__item">
-                <img class="vector" src="assets\vector.png">
-                <h3 class="menu__title">Katherine Nicol Olivares Ossandón</h3>
-                <h4 class="menu__list__item__contacto"><a href="#contacto">olivares.ossandon@gmail.com</a></h4>
-            </header>
-        </section>
+    <section class="menu">         
+        <header class="menu__header">
+            <h1 class="menu__title">✿Katherine Nicol Olivares Ossandón</h1>
 
-        <div>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobremi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div>
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#sobremi">Sobre mi</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                        <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h2 class="menu__list__item__contacto"><a href="#contacto">olivares.ossandon@gmail.com</a></h2>
+        </header>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
+
     <section class="title">
-        <div class="title__div">
-            <img class="foto__profile" src="assets/foto.png" alt="foto de perfil">
-            <img class="flor-loto" src="assets/flor-bicolor.jpg" alt="flor de colores">
-            <div class="title__container">
-                <h2 class="title__bio">Hola! mi nombre es Katherine y soy estudiante de programación.</h2>
-                <h3 class="title__subsection">Estoy recién comenzando en el mundo de la tecnología y he llegado aquí gracias al proyecto Oracle ONE en Alura Latam.</h3>
-                <ul class="title__network">
-                    <li class="title__network__item"><a href="https://github.com/KataNicol">Github <img src="assets\arrow.png" alt="flecha"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/katherine-nicol-olivares-ossand%C3%B3n">Linkedin <img src="assets\arrow.png"></a></li>
-                </ul>
+        
+        <section class="titledescription">
+            <img class="flor-loto" src="assets/flor-bicolor.jpg" alt="flor de loto">
+            <div class="presentacion">
+                <h12 class="titlebio">Hola! mi nombre es Katherine y soy estudiante de programación.</h12>
+                <p class="titlesubsection">Estoy recién comenzando en el mundo de la tecnología y he llegado aquí gracias al proyecto Oracle ONE en Alura Latam.</p>
             </div>
-        </div>
+        </section>
+
+        <section class="title__redes">
+            <img class="foto__profile" src="assets/foto.png" alt="foto de perfil">
+            <ul class="lista__redes">
+                <li class="titlenetworkitem"><a href="https://github.com/KataNicol" target="_blank">Github <img src="assets\arrow.png" alt="flecha"></a></li>
+                <li class="titlenetwork__item"><a href="https://www.linkedin.com/in/katherine-nicol-olivares-ossandón" target="_blank">Linkedin<img                 src="assets\arrow.png" alt="flecha"></a></li>
+            </ul>
+        </section>
     </section>
 
-    
     <!-- Sección sobre mi -->
     <section class="about" id="sobremi">
         <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
+            <h4 class="about__title">Sobre mi</h4>
             <p class="about__paragraph">Soy Chilena, Vivo en la quinta región, aún en busca de una profesión en la que hacer carrera, sin embargo hace unos meses comencé a estudiar programación, ya que la caja de compensación de mi último empleo envió una invitación a postular a la beca del programa ONE, postulé, fui seleccionada y comenzé a aprender muchísimas cosas que me han parecido muy intreresantes, desafiantes y entretenidas. Lo mejor es que descubrí en la programación una herramienta muy útil para reinventar mi camino laboral.
             <p class="about__paragraph">Esto no se parece a nada de lo que he hecho antes, es totalmente nuevo para mí, pero en este poco tiempo de aprendizaje, ha logrado nacer en mi la intención de convertirme en un desarrollador web, y por esto es que estoy muy agradecida de esta oportunidad y de todas las entidades que la hicieron posible. Como parte de mis estudios, he construído este portafolio, que hoy está recién en su inicio, pero que espero seguir haciendo crecer. </p>
         </div>
@@ -66,7 +67,7 @@
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <h5 class="skills__title">Skills</h5>
             
             <div class="skills__line">
 
@@ -95,7 +96,7 @@
 
     <!-- Sección de Hobbies -->
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
+        <h6 class="hobbies__title">Hobbies</h6>
             
             <div class="hobbies__line">
                 <div class="hobbies__box">
@@ -151,15 +152,15 @@
 
         <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
+        <h7 class="academic__title" >Formación académica</h7>
 
         
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
         
-                    <li class="academic__courses__item__img"><img src="assets/alura+oracle.png" alt="logos de alura y oracle"></li>
-                    <li class="academic__courses__item__title"><h4>ONE es un programa de Educación, Inclusión y Empleabilidad, con el objetivo social de capacitar personas en tecnología y conectarlas con el mercado de trabajo por medio de empresas socias.
-                    </h4></li>
+                    <li><img class="imagen__academica" src="assets/alura+oracle.png" alt="logos de alura y oracle"></li>
+                    <li class="academic__courses__item__title"><h8>ONE es un programa de Educación, Inclusión y Empleabilidad, con el objetivo social de capacitar personas en tecnología y conectarlas con el mercado de trabajo por medio de empresas socias.
+                    </h8></li>
                     <li class="academic__courses__item__subtitle"><p>2024 - Alura</p></li>
                 </ul>
             </div>
@@ -167,14 +168,14 @@
 
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto"></div>
-            <div class="formcontato--esquerda"></div>
+            <div class="div__texto__contacto">
+                <h9 class="formcontato__title">Contacto</h9>
+                <h10 class="formcontato__subtext">¿Quiere contactarme?</h10>
+                <h11 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h11>
+            </div> 
 
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">Contacto</h2>
-                <h3 class="formcontato__subtext">¿Quiere contactarme?</h3>
-                <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                <form class="formcontato__form" name="form">
+            <div class="div__input">   
+                <form name="form">
                     <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required >
                     <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required >
                     <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required >
